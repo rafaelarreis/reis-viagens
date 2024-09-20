@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de viagem</title>
+</head>
+<body>
+    <section>
+        <h2>Reserva de viagem</h2>
+        <form method="GET" action="">
+          <label>Nome</label><br>
+          <input type="text" name="nome"> <br><br>
+          <label>Email</label><br>
+          <input type="email" required name="email"><br><br>
+          <fieldset>
+            <label>Serviços Desejados</label><br>
+            <label>
+                <br><input type="checkbox" name="passagens" value="passagens">Compra de Passagens
+            </label>
+            <label>
+                <br><input type="checkbox" name="hospedagem" value="hospedagem">Reserva de Hospedagem
+            </label>
+            <label>
+                <br><input type="checkbox" name="veículos" value="veículos">Aluguel de Veículos
+            </label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <label>Forma de Pagamento</label><br>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="credito">Cartão de Crédito
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="boleto">Boleto
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="pix">Pix
+            </label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <label>Prazo de Pagamento</label><br>
+            <label>
+                <br><select name="prazoPagamento">
+                    <option value="aVista">Á vista</option>
+                    <option value="5x">Cinco Vezes Sem Juros</option>
+                    <option value="10x" selected>Dez Vezes Com Juros</option>
+                </select>
+          </fieldset>
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+</body>
+</html>
